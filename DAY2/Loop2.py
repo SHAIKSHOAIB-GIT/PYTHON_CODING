@@ -1,4 +1,4 @@
-# finding heigest value in list using loop
+# finding heigest value in list using loop not using max or min funtions
 
 student_score = input("input a list of student score: ").split()
 for n in range(0, len(student_score)):
@@ -10,4 +10,3 @@ for x in student_score:
     if score < x:
         score = x
 print(f"student heigest score is : {score}")        
-
