@@ -1,3 +1,5 @@
+# I FAILLED TO THIS  PROJECT
+
 import random
 import os
 def deal_card():
@@ -87,6 +89,3 @@ while input("Do you want to play a game of Blackjack? Type 'y' or 'n': ") == "y"
   clear = lambda: os.system('clear')
   clear()
   play_game()
-
-    
-
