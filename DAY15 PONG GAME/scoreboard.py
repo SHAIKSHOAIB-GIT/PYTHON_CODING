@@ -16,10 +16,10 @@ class Score(Turtle):
 
     def scoreboard(self):
         self.clear()
-        self.goto(-200,100)
-        self.write(self.r_score, align=ALIGN, font=FONT)
-        self.goto(200,100)
-        self.write(self.l_score, align=ALIGN, font=FONT)
+        self.goto(-280,100)
+        self.write(f"score {self.r_score}", align=ALIGN, font=FONT)
+        self.goto(280,100)
+        self.write(f"score {self.l_score}", align=ALIGN, font=FONT)
 
 
     def r_scorenum(self):
