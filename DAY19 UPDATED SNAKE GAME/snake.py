@@ -14,7 +14,7 @@ class Snake:
     def create_snake(self):
         for index in position:
             self.append_snake(index)
-            
+
 
     def append_snake(self, index):
         my_turtle = Turtle("square")
@@ -25,6 +25,13 @@ class Snake:
 
     def extend_snake(self):
         self.append_snake(self.all_turtle[-1].position())
+
+    def reset(self):
+        for turtle in self.all_turtle:
+            turtle.goto(1000,1000)
+        self.all_turtle.clear()
+        self.create_snake()
+        self.head = self.all_turtle[0]
 
     def move(self):       
         # here in range we use start,stop,steps
